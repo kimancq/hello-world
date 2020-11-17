@@ -1,0 +1,25 @@
+
+
+create database **; | cria uma banco de dados
+drop database ** | excluir o banco de dados existente com o nome
+
+collation == definição dos caracteres
+
+constrain fica azul
+
+Para criação de um banco de dados con acentuos e tudo mais relacionado a escrita.
+create database ***
+default character set utf8
+default collate utf8_general_ci;
+
+Criação de tabelas
+create table pessoas(
+id int not null auto_increment,
+nome varchar(30) not null,
+nascimento date,
+sexo enum('M','F'),
+peso decimal(5,2), 
+altura decimal(3,2),
+nacionalidade varchar(20) default 'Brazil',
+primary key (id)
+)default charset utf8;
