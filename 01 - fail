@@ -1,0 +1,35 @@
+alter table ***
+add column...;(informações normais de especificação/descrição etc).
+
+alter table ***
+drop column ***; 
+
+alter table ***
+add column ***... after ***; (***=column)
+
+alter table ***
+add column *** ... first;
+
+alter table ***
+modify column *** ...; 
+
+modify permite mudar os tipos primitivos e as contraints
+ 
+change column *** **; (***=nome atual **=novo nome) | adicionar configurações novamente/constraints.
+
+alter table ***
+rename to **; (***=nome atual **=novo nome) 
+
+novos comandos para constraits
+unique=não permite que vc adicione nomes iguais na mesma tabela com o mesmo campo
+unsigned=seila
+
+adicionanto primary key em uma tabela já existente
+alter table **
+add column **;
+alter table **
+add primary column (***); (***=nome da coluna criada ou já existente).
+
+drop table **; para excluir uma tabela com todos os dados
+
+alter table, drop table ddl 
