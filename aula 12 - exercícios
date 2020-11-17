@@ -1,0 +1,17 @@
+select nome,sexo from pessoa where sexo='F';
+
+select * from pessoa where nascimento > '2000-01-1' and nascimento < '2015-12-31';
+
+select count(id) from pessoa where sexo='M' and profissao like '%grama%';
+
+select sexo, nacionalidade, nome from pessoa where sexo='F' and nacionalidade ='brasil' and nome like 'j%';
+
+select nome, nacionalidade from pessoa where nacionalidade != 'brasil' and nome like '%_silva%' and peso < '100';
+
+select max(altura) from pessoa where sexo = 'M' and nacionalidade ='brasil';
+
+select avg(peso) from pessoa;
+
+select min(peso) from pessoa where sexo='f' and nascimento between '1990-01-01' and '2000-12-31';
+
+select count(id) from pessoa where sexo='f' and altura > '1.90';
