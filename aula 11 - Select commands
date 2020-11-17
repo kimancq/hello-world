@@ -1,0 +1,51 @@
+result set - fazendo-se um select ele dará o resultado, chamado de 'result set'.
+
+select * from curso
+order by *;
+*=atributo
+
+select * from curso
+order by * desc;
+desc=descendant
+
+select nome,id,ano from curso
+order by ..;
+
+select * from curso
+order by nome,id,ano;
+
+select * from curso
+where ano = '2016'
+order by idcurso;
+
+select * from curso
+where ano between 2015 and 2016
+order by idcurso;
+
+operadores relacionais funcionam para where.
+
+select * from curso
+where carga in (40,50);
+
+%%%%% PARTE 2 _______
+% = case sensitive = nem um ou vários caracteres.
+like = parecido
+_ = exige uma letra ou número.
+
+select * from curso
+where nome like 'P%';
+
+select * from curso
+where nome like 'P%';
+
+select * from curso
+where nome like '%p_';
+
+select distinct nacionalidade from pessoa;
+
+!!!!!!!! Funções de agregação @@@@@@@@@
+count/max/min/sum/avg
+
+select count(*) from pessoa where nome like '%silva%';
+
+select max(totaulas) from curso where ano = '2016';
