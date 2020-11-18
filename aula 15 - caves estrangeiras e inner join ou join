@@ -1,0 +1,5 @@
+select pessoa.nome, curso.nome
+from curso join pessoa on curso.idcurso = pessoa.cursopreferido;
+
+select p.nome, c.nome
+from curso as c join pessoa as p on c.idcurso = p.cursopreferido;
