@@ -1,0 +1,24 @@
+&&&&& Funções de Agrupamento &&&&&
+group by column
+having column - usa-se se preciso operadores relacionais ou Funções de Agregação.
+
+select nacionalidade, count(id) from pessoa group by nacionalidade;
+
+select nacionalidade, count(id) from pessoa group by nacionalidade having nacionalidade != 'brasil';
+
+¨¨¨¨Exercício¨¨¨¨
+select profissao, count(*) from pessoa
+group by profissao
+order by count(*) desc;
+
+select sexo, count(*) from pessoa
+where nascimento > '2005-01-01'
+group by sexo;
+
+select nacionalidade, count(id) from pessoa
+group by nacionalidade
+having nacionalidade != 'brasil' and count(*) >= 3
+order by count(id) desc;
+
+select count(*) from pessoa
+where peso > '100' and altura > (select avg(altura) from pessoa);
