@@ -1,0 +1,9 @@
+Comando para alteração, exclusão de dados ou tudo relacionados a dados.
+
+update curso
+set profissao = 'cozinheiro'
+where id_curso = '5';
+
+update curso
+set profissao = 'cozinheiro', salario = '2,000,00, data_inicio = '2015-05'
+where id_curso = '5';
