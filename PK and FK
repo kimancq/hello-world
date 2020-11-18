@@ -1,0 +1,7 @@
+()()()Para adicionar uma chave estrangeira com uma tabala já defenida usa-se o comando: ()()()
+add foreign key(nome que quer dar ao curso)
+references curso(id_curso);
+
+()()()Para criar uma tabela já com uma chave estrangeira usa-se o comando;
+constraint fk_id_prof_prof foreign key (id_prof) references professor(id_prof);
+***alterar futuramente.
