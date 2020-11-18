@@ -1,0 +1,9 @@
+myisam, innodb, XtraDB
+MyIsam não suporta o acid
+InnoDB e XtraDB suportam o acid
+
+acid - transação.
+a = Atomicidade - ou tudo acontece, ou não acontece.
+c = Consistência - se estava tudo certo, e tentar algo que tem algo em errado, volta a o que era antes.
+i = Isolamento - se há duas pessoas ao mesmo tempo no server, só pode ser realizado um de cada vez.
+d = Durabilidade - qualquer altereção feita tem que ser segura e consistente. 
