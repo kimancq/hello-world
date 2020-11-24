@@ -1,2 +1,2 @@
-# hello-world
-just to test
+# projeto de estudo/study project
+aulas da bosontreinamentos e cursoemvídeo
